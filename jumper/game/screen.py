@@ -1,6 +1,6 @@
 
 
-class Screen():
+class Screen:
     """
     The class jumper...
     """

@@ -3,7 +3,7 @@ from game.screen import Screen
 from game.word_bank import WordBank
 
 
-class Director():
+class Director:
     """
     The class director...
     """

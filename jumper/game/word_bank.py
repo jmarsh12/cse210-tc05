@@ -21,6 +21,7 @@ class WordBank:
         """
         words = ['Intelligent', 'Supercalifragilisticexpialidocious', 'Gina', 'Pterodactyl', 'Giraffe', 'Dragon',
                  'Hippopotomonstrosesquippedaliophobia']
+
         return words
         pass
 
