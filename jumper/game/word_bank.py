@@ -11,12 +11,17 @@ class WordBank:
         """
         The constructor method.
         """
+        self.pick_random_word = ''
+        self.generate_word = []
         pass
 
     def generate_word(self):
         """
         The generate_word method contains a list of words to choose from.
         """
+        words = ['Intelligent', 'Supercalifragilisticexpialidocious', 'Gina', 'Pterodactyl', 'Giraffe', 'Dragon',
+                 'Hippopotomonstrosesquippedaliophobia']
+        return words
         pass
 
     def pick_random_word(self):
