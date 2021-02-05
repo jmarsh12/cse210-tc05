@@ -1,8 +1,8 @@
 
 
-class Game():
+class Screen():
     """
-    The class game...
+    The class jumper...
     """
 
     def __init__(self):

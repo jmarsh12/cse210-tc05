@@ -1,8 +1,8 @@
 
 
-class Jumper():
+class Word_bank():
     """
-    The class jumper...
+    The class word...
     """
 
     def __init__(self):
