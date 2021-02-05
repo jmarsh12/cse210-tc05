@@ -1,6 +1,6 @@
 
 
-class Rule_manager():
+class RuleManager():
     """
     The class game...
     """
