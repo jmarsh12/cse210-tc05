@@ -27,19 +27,23 @@ class Director():
     def start_game(self):
         """
         begins the game and continues running until the user decides to quit playing
+        returns: --- (only calls other functions)
         """
-        while self.keep_playing and !manager.game_over: #TODO: make sure this is a method in rulemngr class
+        while self.keep_playing and !manager.game_over: #TODO: make sure this is a method in rulemngr class:
+
             pass
         pass
 
     def update_values(self):
         """
         updates all values before outputting to screen
+        returns: --- (only calls other functions)
         """
         pass
 
     def output(self):
         """
         prints to screen
+        returns: ---(only calls other functions)
         """
         pass
