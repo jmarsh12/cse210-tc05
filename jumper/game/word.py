@@ -2,7 +2,7 @@
 
 class Word():
     """
-
+    The class word...
     """
 
     def __init__(self):
