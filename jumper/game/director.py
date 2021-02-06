@@ -10,29 +10,29 @@ class Director:
 
     def __init__(self):
         """
-        
+        Creates objects of the classes
         """
-        #self.console = Console()
-        #self.jumper = Jumper()
-       # self.bard = Board()
-        #self.board.debug_mode = False
+        self.word = WordBank()
+        self.screen = Screen()
+        self.manager = RuleManager()
         self.keep_playing = True
-        #self.current_guess = ''
         pass
-
-    word1 = WordBank()
-    screen1 = Screen()
-    manager = RuleManager()
 
     def start_game(self):
         """
         begins the game and continues running until the user decides to quit playing
         returns: --- (only calls other functions)
         """
-        while self.keep_playing and !manager.game_over: #TODO: make sure this is a method in rulemngr class:
 
-            pass
+        while self.keep_playing and !manager.game_over:#TODO: make sure this is a method in rulemngr class:
+            self.get_inputs()
+            self.update_values()
+            self.output()
+
+    def get_inputs(self):
         pass
+
+
 
     def update_values(self):
         """
