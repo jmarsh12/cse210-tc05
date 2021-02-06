@@ -30,6 +30,8 @@ class Director:
             self.output()
 
     def get_inputs(self):
+        self.word.pick_random_word()
+
         pass
 
 
@@ -39,6 +41,8 @@ class Director:
         updates all values before outputting to screen
         returns: --- (only calls other functions)
         """
+
+
         pass
 
     def output(self):
@@ -46,4 +50,5 @@ class Director:
         prints to screen
         returns: ---(only calls other functions)
         """
+
         pass
