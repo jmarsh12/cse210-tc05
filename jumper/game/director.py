@@ -1,4 +1,4 @@
-from game.rule_manager import RuleManager
+from game.rule_manager import Rule_Manager
 from game.screen import Screen
 from game.word_bank import WordBank
 
@@ -14,41 +14,35 @@ class Director:
         """
         self.word = WordBank()
         self.screen = Screen()
-        self.manager = RuleManager()
+        self.manager = Rule_Manager()
         self.keep_playing = True
-        pass
+        self.word_to_guess = ''
 
     def start_game(self):
         """
         begins the game and continues running until the user decides to quit playing
         returns: --- (only calls other functions)
         """
-
-        while self.keep_playing and !manager.game_over:#TODO: make sure this is a method in rulemngr class:
-            self.get_inputs()
-            self.update_values()
+        self.word_to_guess = self.word.get_word()
+        while self.manager.keep_playing:
+            self.input_and_update_values()
             self.output()
 
-    def get_inputs(self):
-        self.word.pick_random_word()
+   # def get_inputs(self):
+   #     choice = self.screen.get_letter()
+    #    return choice
 
-        pass
-
-
-
-    def update_values(self):
+    def input_and_update_values(self):
         """
         updates all values before outputting to screen
         returns: --- (only calls other functions)
         """
-
-
-        pass
+        self.manager.check_letter(self.screen.get_letter(), self.word_to_guess)
+        self.screen.underscore(self.word_to_guess)
 
     def output(self):
         """
         prints to screen
         returns: ---(only calls other functions)
         """
-
-        pass
+        self.screen.display(self.word_to_guess)
