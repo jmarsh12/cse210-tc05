@@ -23,6 +23,7 @@ class WordBank:
         words = ['Intelligent', 'Supercalifragilisticexpialidocious', 'Gina', 'Pterodactyl', 'Giraffe', 'Dragon',
                  'Hippopotomonstrosesquippedaliophobia']
         word = random.choice(words)
+        
         return word.upper()
 
     def pick_random_word(self):
