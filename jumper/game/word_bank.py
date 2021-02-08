@@ -13,7 +13,6 @@ class WordBank:
         """
         self.pick_random_word = ''
         self.get_word = []
-        pass
 
     def get_word(self):
         """

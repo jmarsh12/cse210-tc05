@@ -1,6 +1,6 @@
-from rule_manager import RuleManager
-from screen import Screen
-from word_bank import WordBank
+from game.rule_manager import RuleManager
+from game.screen import Screen
+from game.word_bank import WordBank
 
 
 class Director:
