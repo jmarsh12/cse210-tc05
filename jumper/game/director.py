@@ -28,7 +28,7 @@ class Director:
         self.word = self.word_bank.get_word()
         self.underscore = self.screen.get_underscore(len(self.word))
         self.screen.display(len(self.word))
-        while self.keep_playing and self.manager.game_over(self.word):#TODO: make sure this is a method in rulemngr class:
+        while self.keep_playing and self.manager.game_over(self.word, self.underscore):#TODO: make sure this is a method in rulemngr class:
             self.get_inputs()
             self.update_values()
             self.output()
