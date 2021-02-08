@@ -12,24 +12,23 @@ class WordBank:
         The constructor method.
         """
         self.pick_random_word = ''
-        self.generate_word = []
+        self.get_word = []
         pass
 
-    def generate_word(self):
+    def get_word(self):
         """
-        The generate_word method contains a list of words to choose from.
+        The generate_word method contains a list of words to choose from, as well as
+        picks a random word to return to the user.
         """
         words = ['Intelligent', 'Supercalifragilisticexpialidocious', 'Gina', 'Pterodactyl', 'Giraffe', 'Dragon',
                  'Hippopotomonstrosesquippedaliophobia']
-
-        return words
-        pass
+        word = random.choice(words)
+        return word.upper()
 
     def pick_random_word(self):
         """
         The pick_random_word method takes the list from generate_word and picks
         a random one to return to Screen.
         """
+        # TODO do we need this method?
         pass
-
-    pass
