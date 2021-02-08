@@ -51,7 +51,7 @@ class Rule_Manager():
         if self.play == 4:
             jumper[0] = "   x"
         
-    def game_over(self, word):
+    def game_over(self, word, underscore):
         """
         This function will run continously and determine 
         whether or not you can keep playing.
@@ -59,4 +59,8 @@ class Rule_Manager():
         if self.play >= 4:
             print(f"Game over. The word is {word}")
             return False
-        return True
+        for i in underscore:
+            if i == "_":
+                return True
+        print("You won.")
+        return False
