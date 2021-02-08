@@ -10,9 +10,9 @@ class Rule_Manager():
     def __init__(self):
         self.play = 0
 
-    def check_letter(self, screen.letter, rand_word):
-        for i in rand_word
-            if screen.letter is == i:
+    def check_letter(self, letter, rand_word):
+        for i in rand_word:
+            if letter == i:
                 return True
             else:
                 return False
@@ -23,17 +23,17 @@ class Rule_Manager():
         """
 
     def wrong_answer(self):
-    """
-    This function keeps track of how many times 
-    the player has guessed the wrong answer.
-    """
-        if check_letter == False:
-             self.play += 1
+        """
+        This function keeps track of how many times 
+        the player has guessed the wrong answer.
+        """
+        while check_letter == True:
+            Else: self.play = self.play + 1
         
-    def keep_playing(self)
-    """
-    This function will run continously and determine 
-    whether or not you can keep playing.
-    """
-    while self.play >= 3
-    exit()
+    def keep_playing(self):
+        """
+        This function will run continously and determine 
+        whether or not you can keep playing.
+        """
+        while self.play >= 3:
+            exit()
