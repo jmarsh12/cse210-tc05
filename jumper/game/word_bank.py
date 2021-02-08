@@ -11,7 +11,6 @@ class WordBank:
         """
         The constructor method.
         """
-        self.pick_random_word = ''
         self.get_word = []
 
     def get_word(self):
@@ -25,11 +24,3 @@ class WordBank:
         word = random.choice(self.get_word)
 
         return word.upper()
-
-    def pick_random_word(self):
-        """
-        The pick_random_word method takes the list from generate_word and picks
-        a random one to return to Screen.
-        """
-        # TODO do we need this method?
-        pass
