@@ -10,7 +10,7 @@ class Rule_Manager():
     def __init__(self):
         self.play = 0
 
-    def check_letter(screen.letter, rand_word):
+    def check_letter(self, screen.letter, rand_word):
         for i in rand_word
             if screen.letter is == i:
                 return True
@@ -22,7 +22,7 @@ class Rule_Manager():
         It will return a true or false.
         """
 
-    def wrong_answer():
+    def wrong_answer(self):
     """
     This function keeps track of how many times 
     the player has guessed the wrong answer.
@@ -30,7 +30,7 @@ class Rule_Manager():
         if check_letter == False:
              self.play += 1
         
-    def keep_playing()
+    def keep_playing(self)
     """
     This function will run continously and determine 
     whether or not you can keep playing.
