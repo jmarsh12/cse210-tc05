@@ -1,5 +1,3 @@
-
-
 class Screen:
     """
     The class jumper...
@@ -30,6 +28,7 @@ class Screen:
         """
         for i in range(length):
             self.underscore.append("_")
+        return self.underscore
     
     def display(self, length):
         """
