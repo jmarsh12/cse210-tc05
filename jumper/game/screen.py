@@ -20,7 +20,7 @@ class Screen:
 
     def get_jumper(self):
         """
-        return the list of jumber
+        return the list of jumper
         """
         return self.jumper
         
@@ -44,4 +44,3 @@ class Screen:
             print(i)
         
         print()
-         
