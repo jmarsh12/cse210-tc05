@@ -10,19 +10,20 @@ class Rule_Manager():
         self.correct_letter = ""
 
     def check_letter(self, letter, rand_word):
+        """
+        This function will take the letter that it receives from screen and check
+        to see if it is a letter in the word that the player is guessing.
+        It will return a true or false.
+        """
         for i in rand_word:
             if letter == i.lower():
                 return True
         return False
-        """
-        This function will take the letter that it recieves from screen and check
-        to see if it is a letter in the word that the player is guessing. 
-        It will return a true or false.
-        """
+
     
     def get_correct_letter(self, letter, word):
         """
-        get the correct letter and the index for chainging the list of underscore
+        get the correct letter and the index for changing the list of underscore
         """
         self.index.clear()
         for i in range(len(word)):
@@ -45,7 +46,6 @@ class Rule_Manager():
         This function keeps track of how many times 
         the player has guessed the wrong answer.
         """
-        # while check_letter == True:
         jumper.pop(0)
         self.play += 1
         if self.play == 4:
@@ -53,14 +53,15 @@ class Rule_Manager():
         
     def game_over(self, word, underscore):
         """
-        This function will run continously and determine 
+        This function will run continuously and determine
         whether or not you can keep playing.
         """
         if self.play >= 4:
-            print(f"Game over. The word is {word}")
+            print(f"Aww... Too bad... The word is {word}")
+            print('Better luck next time!')
             return False
         for i in underscore:
             if i == "_":
                 return True
-        print("You won.")
+        print("Congratulations! You've won!")
         return False

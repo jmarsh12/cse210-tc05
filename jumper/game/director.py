@@ -17,8 +17,8 @@ class Director:
         self.keep_playing = True
         self.letter = ""
         self.word = ""
-        self.underscord = []
-        self.jumber = []
+        self.underscore = []
+        self.jumper = []
         
     def start_game(self):
         """
@@ -28,7 +28,8 @@ class Director:
         self.word = self.word_bank.get_word()
         self.underscore = self.screen.get_underscore(len(self.word))
         self.screen.display(len(self.word))
-        while self.keep_playing and self.manager.game_over(self.word, self.underscore):#TODO: make sure this is a method in rulemngr class:
+        # TODO: make sure this is a method in rulemanager class:
+        while self.keep_playing and self.manager.game_over(self.word, self.underscore):
             self.get_inputs()
             self.update_values()
             self.output()
@@ -54,4 +55,3 @@ class Director:
         returns: ---(only calls other functions)
         """
         self.screen.display(len(self.word))
-        
